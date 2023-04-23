@@ -1,0 +1,155 @@
+
+:root{
+    --Red: #ff0004f2;
+    --white: #ffffff;
+    --yellow: #ffb300;
+    --background: #f4f4f4;
+    --font-color: #4b4b4b;
+    --red: #ff0004;
+
+}
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0% auto;
+}
+
+header{
+    background-color: var(--Red);
+    color: var(--white);
+}
+
+#sub-header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 0rem;
+    box-sizing: border-box;
+}
+
+#sub-header button{
+    padding: 0.6rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    background-color: var(--Red);
+    color: var(--white);
+    border: 5px solid var(--white);
+}
+
+#introduction-pic{
+    background-image: url(./img/banner.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+    padding-top: 6rem;
+}
+#sub-heading{
+    margin-top: 8rem;
+    padding: 2rem 1.5rem;
+    width: 40%;
+    background-color: var(--yellow);
+    
+}
+
+.heading-one {
+    
+    font-size: 3rem;
+    color: var(--white);
+}
+.heading-two{
+    
+    
+    font-size: 3.2rem;
+    color: var(--white);
+}
+.heading-one h2{
+    font-weight: 800;
+}
+.heading-two h1{
+    font-weight: 800;
+}
+#navigation ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navigation {
+    padding: 1rem;
+    background-color: var(--background);
+}
+#navigation ul li {
+    list-style: none;
+    color: var(--font-color);
+    font-weight: 200;
+}
+#main-section{
+    margin-top: 4rem;
+}
+#main-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--red);
+}
+#main-section p {
+    color: var(--font-color);
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+#sub-main-section{
+    margin-top: 4rem;
+    display: flex;
+    
+}
+
+#sub-main-section img {
+    height: 250px;
+    margin: 4.375rem;
+    align-items: center;
+    
+}
+#joining-section{
+
+    text-align: center;
+    height: 300px;
+    background-color: var(--background);
+}
+#joining-section h2 {
+    padding-top: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--font-color);
+    margin-bottom: 1rem;
+}
+#joining-section p {
+    color: var(--font-color);
+    margin-bottom: 2rem;
+}
+#joining-section button {
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    background-color: var(--white);
+    border-radius: 30px;
+    color: var(--font-color);
+    border: 1px solid var(--background);
+}
+
+footer{
+    height: 60px;
+    background-color: var(--red);
+    text-align: center;
+    padding-top: 1.5rem;
+    box-sizing: border-box;
+
+}
+footer p {
+    color: var(--white);
+}
