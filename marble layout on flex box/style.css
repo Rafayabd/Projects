@@ -1,0 +1,136 @@
+*{
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.container{
+ width: 80%;
+ margin: 0% auto;
+}
+header{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#sub-header{
+    display: flex;
+    justify-content: space-between;
+}
+#navigation ul {
+    display: flex;
+    font-size: 1.2rem;
+}
+#navigation li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.background-image{
+    background-image: url(./images/background-image.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#sub-main-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+    margin-top: 5rem;
+    
+}
+#sub-main-container h3{
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    color: #4e4e4e;
+    
+}
+#sub-main-container p {
+    font-size: 0.9rem;
+    color: #a3a3a3;
+    line-height: 1.5rem;
+}
+#sub-hr{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #a3a3a3;
+}
+#working-container h3{
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    color: #4e4e4e;
+
+}
+#sub-working-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#sub-working-container p {
+    color: #a3a3a3;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+#sub-footer{
+    text-align: center;
+    margin-top: 3rem;
+    height: 10rem;
+    background-color: #efefef;
+    padding-top: 3rem;
+}
+
+#sub-footer p {
+    color: #a3a3a3;
+    margin-top: 3rem;
+}
+#main-sub-footer{
+    background-color: #1f1f1f;
+    padding-top: 3rem; 
+    padding-bottom: 1rem;
+}
+
+#footer-main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-items p {
+    font-size: 0.9rem;
+    color: #b8b8b8;
+    margin: 20px;
+
+}
+
+
+
+.footer-items h3{
+    right: 1rem;
+    color: #636363;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+
+}
+
+#twitter-footer p{
+    position: relative;
+  }
+
+  #twitter-footer p::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(./images/tweet.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+  }
+  #last-footer p {
+    color: #b8b8b8;
+    margin-top: 1rem;
+  }
+
+ 
