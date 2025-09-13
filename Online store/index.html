@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessories Store</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">✨ Accessories Store</div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="cart.html">Cart 🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+    <div class="menu-toggle">☰</div>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Upgrade Your Style with Premium Accessories</h1>
+    <p>Hand-picked products just for you. Add them to your cart now!</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <input type="text" id="search" placeholder="Search products...">
+    <div>
+      <label>Max Price: $<span id="price-val">100</span></label>
+      <input type="range" id="price-range" min="10" max="100" value="100">
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <main id="products">
+    <h2>Featured Products</h2>
+    <div class="product-list">
+      <!-- Product 1 -->
+      <div class="product-item" data-price="40">
+        <img src="./Assets/arthur-a-qKULPvzvMM0-unsplash.jpg" alt="Stylish Watch">
+        <h3>Stylish Watch</h3>
+        <p>$40</p>
+        <button class="add-to-cart" onclick= "addToCart('Product 1', '$20', 'assets/product1.jpg')" >Add to Cart</button>
+        <button class="quick-view">Quick View</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-item" data-price="65">
+        <img src="./Assets/faizur-rehman-iwd_99qV7Uk-unsplash.jpg" alt="Modern Backpack">
+        <h3>Modern Backpack</h3>
+        <p>$65</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="quick-view">Quick View</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-item" data-price="90">
+        <img src="./Assets/i-m-zion-YZHHrVhyc9I-unsplash.jpg" alt="Trendy Headphones">
+        <h3>Trendy Headphones</h3>
+        <p>$90</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="quick-view">Quick View</button>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-item" data-price="55">
+        <img src="./Assets/triyansh-gill-uUmXIGWzPPk-unsplash.jpg" alt="Smart Sunglasses">
+        <h3>Smart Sunglasses</h3>
+        <p>$55</p>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="quick-view">Quick View</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Quick View Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Accessories Store. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
